@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuizzyAdmin</string>
+    <string name="title_activity_show_sets">ShowSetsActivity</string>
+    <string name="title_activity_add_new_category">AddNewCAtegory</string>
+    <string name="title_activity_show_question">ShowQuestionActivity</string>
+    <string-array name="choices">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

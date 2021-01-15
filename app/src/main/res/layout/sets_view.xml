@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/view_lay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/cat_view_lay"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/edit"
+            android:layout_marginRight="10dp"
+            android:id="@+id/setsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Title here"
+            android:textColor="@color/colorbackground"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Switch
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/setsTitle"
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:text="Active" />
+
+        <Switch
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/switch2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setsTitle"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:text="IsNew" />
+
+        <LinearLayout
+            android:layout_below="@+id/switch1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/edit"
+                android:id="@+id/diff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Difficulty: Hard"
+                android:textAlignment="center"
+                android:textColor="@color/colorbackground" />
+
+            <TextView
+                android:text="Question: 10"
+                android:id="@+id/qst_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:scrollIndicators="right"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorbackground" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ShowQuestionActivity"
+    tools:showIn="@layout/activity_show_question">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/add_new_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addNewQuestion"
+            android:text="Add New Question" />
+
+
+        <TextView
+            android:id="@+id/set_quest_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_new_question"
+            android:fontFamily="monospace"
+            android:padding="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/ques_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/set_quest_Count"
+            android:layout_margin="2dp"
+            tools:listitem="@layout/questions_view" />
+
+    </RelativeLayout>
+</RelativeLayout>
